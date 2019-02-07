@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/timeline"
+        android:title="Timeline" />
+
+
+    <item
+        android:id="@+id/Challenge"
+        android:icon="@drawable/ranking"
+        android:title="Challenge" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/notifcation"
+        android:icon="@drawable/notifcation"
+        android:title="Notification" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/menu"
+        android:title="" />
+
+
+</menu>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutfirstclosssign"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/skyblue">
+
+
+        <ImageView
+            android:id="@+id/closesign"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/closesign" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/closesign"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Support"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f1f1f1">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messagelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/button"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/com_facebook_button_background_color_focused_disabled"></View>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedtext2"
+            android:hint="  Enter Message"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/post_msg"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/sent"
+            android:tint="@color/skyblue" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

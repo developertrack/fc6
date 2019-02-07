@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="80"
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="80"
+
+
+        >
+
+        <TextView
+            android:id="@+id/fc6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Terms&amp;Condition"
+            android:textColor="@color/green"
+            android:textSize="20dp" />
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dividerfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fc6text"
+            android:layout_marginTop="10dp"
+            android:background="#030303"
+
+            android:paddingLeft="60dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"
+
+            />
+
+        <TextView
+            android:id="@+id/termsandcondtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerfirst"
+            android:layout_marginTop="5dp"
+            android:text="This is terms and condition please accept it before to continue.This is terms and condition please accept it before to continue. "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/termsandcondtion"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:text="Ok"
+            android:textColor="@color/skyblue"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

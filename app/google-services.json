@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "55799922930",
+    "firebase_url": "https://fc6silvestre-ebe08.firebaseio.com",
+    "project_id": "fc6silvestre-ebe08",
+    "storage_bucket": "fc6silvestre-ebe08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55799922930:android:4d0303792b25b233",
+        "android_client_info": {
+          "package_name": "com.aafilogic.fc6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55799922930-p7u46q6i3g7ps8p07ntcqqvjp1v4glqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbpEA9RFSrtuxJffsIplDgGThWF_ResN0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

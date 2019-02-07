@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:scrollIndicators="right"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/closesign"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/closesign" />
+
+            <ImageView
+                android:id="@+id/fc6logo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/closesign"
+                android:layout_centerInParent="true"
+                android:background="@drawable/fc6" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fc6logo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="ACCOUNT VERIFICATION"
+                android:textColor="#030303"
+                android:textSize="28dp"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/pin_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pin_first_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/pin_second_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/pin_third_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/pin_forth_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/pin_fifth_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+
+                    />
+
+                <EditText
+                    android:id="@+id/pin_six_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minEms="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin_layout"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="We texted your Verification Code to your mobile phone."
+                android:textColor="#a9a8a8"
+                android:textSize="12dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:text="Resend Verification Code"
+                android:textColor="#030303"
+                android:textSize="12dp"
+
+                />
+
+
+            <Button
+
+                android:id="@+id/submitotp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_resend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

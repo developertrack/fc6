@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/firstitem"
+        android:icon="@drawable/like"
+        android:title="First" />
+
+    <item
+        android:id="@+id/second"
+        android:icon="@drawable/like"
+        android:title="Second" />
+
+    <item
+        android:id="@+id/thirditem"
+        android:icon="@drawable/like"
+        android:title="Third" />
+
+
+</menu>

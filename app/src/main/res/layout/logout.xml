@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="80"
+    android:background="@drawable/rounded_logoutbanner"
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="80"
+
+
+        >
+
+        <TextView
+            android:id="@+id/fc6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="FC6"
+            android:textColor="@color/green"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fc6text"
+            android:text="Are You Sure Want to logout?"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/lgout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Logout"
+            android:textColor="@color/green"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/cencel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="Cancel"
+            android:textColor="#bfbfbf"
+            android:textSize="17dp"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

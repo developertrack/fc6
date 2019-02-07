@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/weekkkkk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/mealplanimage"
+            android:layout_width="34dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mealplanimage"
+            android:layout_marginLeft="50dp"
+            android:text="week day"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dividerfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weekday"
+            android:layout_marginTop="10dp"
+            android:background="#e7e7e7"
+
+            android:paddingLeft="60dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

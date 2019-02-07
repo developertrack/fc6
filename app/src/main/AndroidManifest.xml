@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aafilogic.fc6"
+    android:screenOrientation="portrait">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="true"/>
+
+    <application
+        android:name=".activity.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/fc6"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Splash_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name=".MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+        <activity
+            android:name=".activity.login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teamdetailActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mainFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activityLogActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teamListActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.editprofileActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FoodExchangeListActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.otpActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.createpostActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.messageboardActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Detox_food_yes_listActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BadgesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Detox_food_No_listActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shoppingListActivty"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MealPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MealPlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.Support"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.Rules"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragment.LikeUserFragment"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:hardwareAccelerated="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".New_Home"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Measurements"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Rankings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ranking_Teams"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.mainactivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Challengers"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UploadActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Comment_on_Post"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Comment_on_Message"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ChangePassword"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

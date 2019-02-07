@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="right"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutfirstclosssign"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/skyblue">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+
+                    android:background="@drawable/closesign" />
+
+                <TextView
+                    android:id="@+id/week_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Weak 1"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/secondlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutfirstclosssign">
+
+                <TextView
+                    android:id="@+id/weekday"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Meal Plan"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/weekday"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:layout_marginRight="6dp"-->
+                    <!--android:background="@drawable/week" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/weekday"></LinearLayout>
+
+             <include
+                    layout="@layout/weekplandetailadapter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weekday"
+                    android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"/>
+
+
+            </RelativeLayout>
+
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/dividerfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondlayout"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+
+                android:paddingLeft="60dp"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark"
+
+                />
+
+
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

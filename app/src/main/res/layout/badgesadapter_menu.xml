@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_badge_week"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="gone">
+        <include
+            layout="@layout/badges_menu_revise"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_badge1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_badge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/badges_back_icon"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/badge_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/fork" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/badge_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 X 3"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginLeft="11dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:text="th"
+                    android:textSize="7dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/badge_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Workout"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/skyblue"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_badge2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/badges_back_icon"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/badge_icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/fork" />
+
+            <TextView
+                android:id="@+id/badge_data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 X 3"
+                android:textColor="@color/black"
+                android:textSize="9dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/badge_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Workout"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/skyblue"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</LinearLayout>

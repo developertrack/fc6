@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="80"
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="80"
+
+        >
+
+        <TextView
+            android:id="@+id/fc6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="MEMBERSHIP INFO"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dividerfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fc6text"
+            android:layout_marginTop="10dp"
+            android:background="#030303"
+
+            android:paddingLeft="60dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerfirst"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/linerafirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+
+                    android:textColorHint="#000" />
+
+
+            </LinearLayout>
+
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/linerafirst"
+                android:layout_marginTop="10dp"
+                android:background="#dcdbdb"
+                android:paddingLeft="60dp"
+
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark"
+
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="3dp"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/linerafirst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comapany Name"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comapany Name"
+                    android:textColorHint="#000"
+
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/linerafirst1"
+                android:layout_marginTop="10dp"
+                android:background="#dcdbdb"
+                android:paddingLeft="60dp"
+
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark"
+
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:layout_marginTop="3dp"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/linerafirst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Name"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/team_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Team Name"
+                    android:textColorHint="#000" />
+
+
+            </LinearLayout>
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/linerafirst2"
+                android:layout_marginTop="10dp"
+                android:background="#dcdbdb"
+
+                android:paddingLeft="60dp"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark"
+
+                />
+
+            <Button
+
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg_rounded_corners2"
+                android:text="Done"
+                android:textColor="#ffffff"
+
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

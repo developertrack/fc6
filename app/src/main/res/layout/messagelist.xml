@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationdatelayut"
+            android:layout_centerVertical="true"
+            android:background="#FFFF">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/notificationimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/womancooking"
+                app:civ_border_color="#f5f4f4"
+                app:civ_border_width="2dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstlayout"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/messagename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sendeep"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <ImageView
+
+                android:id="@+id/delete_message"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/deletepost" />
+
+
+            <TextView
+                android:id="@+id/msg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/messagename"
+                android:text="Tuesday, Dec 18, 2018, 4:07 AM"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/messsagedetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg_date"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:maxWidth="100dp"
+                android:maxLines="4"
+                android:text="fdgsdfgsdfgsdfgdsfgdsfgdsfg"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/messsagedetail"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/like_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/like" />
+
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/cmnt_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/like_icon"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/cmnt"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/cmnt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/open_page"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/down_arrow" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
